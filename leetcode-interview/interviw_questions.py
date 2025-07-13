@@ -145,5 +145,16 @@ class Solution:
         l = len(nums)
         if k > l:
             k = k - l
-        nums[:] = nums[l-k:] + nums[0:l-k]
+        nums[:] = nums[l - k:] + nums[0:l - k]
         return nums
+
+    def maxProfit(self, prices: list[int]) -> int:
+        profit = 0
+        min_price = float(inf)
+        for price in prices:
+            if price < min_price:
+                min_price = price
+            elif price - min_price > profit:
+                profit = price - min_price
+        return profit
+
