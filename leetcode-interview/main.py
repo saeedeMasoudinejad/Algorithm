@@ -30,7 +30,14 @@ if __name__ == "__main__":
     # print(s.rotate([1,2],5))
 
     # Maxprofit test case
-    print(s.maxProfit([7,1,5,3,6,4]))
-    print(s.maxProfit([7,6,4,3,1]))
-    print(s.maxProfit([2,2,5]))
-    print(s.maxProfit([2,1,2,0,1]))
+    # print(s.maxProfit([7,1,5,3,6,4]))
+    # print(s.maxProfit([7,6,4,3,1]))
+    # print(s.maxProfit([2,2,5]))
+    # print(s.maxProfit([2,1,2,0,1]))
+
+    # Maxprofit 2 test case
+    print(s.maxProfit_2([7,1,5,3,6,4]))
+    print(s.maxProfit_2([7,6,4,3,1]))
+    print(s.maxProfit_2([2,2,5]))
+    print(s.maxProfit_2([2,1,2,0,1]))
+    print(s.maxProfit_2([1,2,3,4,5]))
